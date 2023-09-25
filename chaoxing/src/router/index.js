@@ -6,13 +6,13 @@ Vue.use(Router)
 import Layout from '@/layout'
 export const constantRoutes = [
   {
-    path: '/login',
-    component: () => import('@/views/login/index'),
+    path: '/',
+    component: () => import('@/views/home/index'),
     hidden: true,
   },
   {
     path: '/transmit',
-    component: () => import('@/views/login/transmit'),
+    component: () => import('@/views/diagram/index'),
     hidden: true,
   },
   {
@@ -26,87 +26,52 @@ export const constantRoutes = [
   // { path: '*', redirect: '/404', hidden: true }
 ]
 
-export const asyncRoutes = [{
-  path: '/',
-  component: Layout,
-  redirect: '/dashboard',
-  children: [{
-    path: 'dashboard',
-    name: 'Dashboard',
-    component: () => import('@/views/student/dashboard/index'),
-    meta: { title: '课程分析', icon: 'dashboard' }
-  }],
-  meta: { requireAuth: true, roles: ['student'] }
-},
+// export const asyncRoutes = [{
+//   path: '/',
+//   component: Layout,
+//   redirect: '/dashboard',
+//   children: [{
+//     path: 'dashboard',
+//     name: 'Dashboard',
+//     component: () => import('@/views/student/dashboard/index'),
+//     meta: { title: '课程分析', icon: 'dashboard' }
+//   }],
+//   meta: { requireAuth: true, roles: ['student'] }
+// },
 
-{
-  path: '/predicted',
-  component: Layout,
-  children: [{
-    path: 'index',
-    name: '学情预测',
-    component: () => import('@/views/student/predicted/index'),
-    meta: { title: '学情预测', icon: 'example' }
-  }],
-  meta: { requireAuth: true, roles: ['student'] }
-  },
-  {
-    path: '/atlas',
-    component: Layout,
-    redirect: '/atlas/table',
-    name: '知识图谱',
-    meta: { title: '知识图谱', icon: 'graph', requireAuth: true, roles: ['student'] },
-    children: [
-      {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/student/atlas/index1'),
-        meta: { title: '学习行为', icon: 'table' }
-      },
-      {
-        path: 'tree',
-        name: 'Tree',
-        component: () => import('@/views/student/atlas/index2'),
-        meta: { title: '课程知识', icon: 'tree' }
-      }
-    ]
-  },
-
-{
-  path: '/',
-  component: Layout,
-  redirect: '/dashboard',
-  children: [{
-    path: 'dashboard',
-    name: 'Dashboard',
-    component: () => import('@/views/teacher/dashboard/index'),
-    meta: { title: '课业分析', icon: 'dashboard' }
-  }],
-  meta: { requireAuth: true, roles: ['teacher'] }
-},
-{
-  path: '/analysis',
-  component: Layout,
-  children: [{
-    path: 'index',
-    name: 'Analysis',
-    component: () => import('@/views/teacher/analysis/index'),
-    meta: { title: '学情分析', icon: 'example' }
-  }],
-  meta: { requireAuth: true, roles: ['teacher'] }
-  },
-  {
-    path: '/graph',
-    component: Layout,
-    children: [{
-      path: 'index',
-      name: 'Graph',
-      component: () => import('@/views/teacher/graph/index'),
-      meta: { title: '知识图谱', icon: 'graph' }
-    }],
-    meta: { requireAuth: true, roles: ['teacher'] }
-  },
-]
+// {
+//   path: '/predicted',
+//   component: Layout,
+//   children: [{
+//     path: 'index',
+//     name: '学情预测',
+//     component: () => import('@/views/student/predicted/index'),
+//     meta: { title: '学情预测', icon: 'example' }
+//   }],
+//   meta: { requireAuth: true, roles: ['student'] }
+//   },
+//   {
+//     path: '/atlas',
+//     component: Layout,
+//     redirect: '/atlas/table',
+//     name: '知识图谱',
+//     meta: { title: '知识图谱', icon: 'graph', requireAuth: true, roles: ['student'] },
+//     children: [
+//       {
+//         path: 'table',
+//         name: 'Table',
+//         component: () => import('@/views/student/atlas/index1'),
+//         meta: { title: '学习行为', icon: 'table' }
+//       },
+//       {
+//         path: 'tree',
+//         name: 'Tree',
+//         component: () => import('@/views/student/atlas/index2'),
+//         meta: { title: '课程知识', icon: 'tree' }
+//       }
+//     ]
+//   },
+// ]
 
 const createRouter = () => new Router({
   // mode: 'history', // require service support
