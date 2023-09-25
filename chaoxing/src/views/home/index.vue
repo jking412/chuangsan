@@ -108,12 +108,12 @@
       </div>
 
       <div class="down-card">
-        <div class="courses">
-          <div class="course" v-for="item in courses" :key="item.index" @click="enter">
-            <div class="course-img">
+        <div class="diagrams">
+          <div class="diagram" v-for="item in diagrams" :key="item.index" @click="enter">
+            <div class="diagram-img">
               <img :src="item.img" alt="">
             </div>
-            <div class="describe">中国地质大学</div>
+            <div class="describe">{{item.name}}</div>
           </div>
         </div>
       </div>
@@ -131,43 +131,18 @@ export default {
   name: 'home',
   data() {
     return {
-      courses: [
+      diagrams: [
         {
           index: 0,
-          name: '水力学',
-          time: '2022-3-1 ~ 2022-8-30',
-          img: require('../../assets/img13.png'),
+          name: '桑基图',
+          img: require('../../assets/img1.png'),
         },
         {
           index: 1,
-          name: '流体力学基础',
-          time: '2022-3-3 ~ 2022-8-27',
-          img: require('../../assets/img14.png'),
+          name: '弦图',
+          img: require('../../assets/img2.png'),
         },
-        {
-          index: 2,
-          name: '工程力学基础',
-          time: '2022-3-2 ~ 2022-8-21',
-          img: require('../../assets/img15.png'),
-        },
-        {
-          index: 3,
-          name: '水力学实验方法',
-          time: '2022-3-4 ~ 2022-8-26',
-          img: require('../../assets/img16.png'),
-        },
-        {
-          index: 4,
-          name: '工程水力学',
-          time: '2022-3-2 ~ 2022-8-29',
-          img: require('../../assets/img17.png'),
-        },
-        {
-          index: 5,
-          name: '水利工程与水利规划',
-          time: '2022-3-3 ~ 2022-8-27',
-          img: require('../../assets/img18.png'),
-        },
+
       ],
       choose: [],
       options: [
@@ -410,38 +385,45 @@ section .down-card {
 //   justify-content: space-between;
 //   align-items: center;
 // }
-section .down-card .courses {
+section .down-card .diagrams {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
   // overflow-y: scroll;
 }
-section .down-card .courses .course {
+
+// section .down-card .diagrams::after {
+// content: '';
+// display: block;
+// flex: 1 1 auto;
+// }
+
+section .down-card .diagrams .diagram {
   width: 19%;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
   box-shadow: rgba(0, 0, 0, 0.12) 0px 0px 8px 0px;
-  margin-bottom: 20px;
+  margin: 0.5%;
 }
-section .down-card .courses .course:hover .course-img img{
+section .down-card .diagrams .diagram:hover .diagram-img img{
   scale: 1.2;
 }
-section .down-card .courses .course:hover .describe {
+section .down-card .diagrams .diagram:hover .describe {
   color: #409EFF;
 }
-section .down-card .courses .course .course-img {
+section .down-card .diagrams .diagram .diagram-img {
   width: 100%;
   height: 200px;
   overflow: hidden;
 }
-section .down-card .courses .course .course-img img {
+section .down-card .diagrams .diagram .diagram-img img {
   width: 100%;
   height: 100%;
 }
-section .down-card .courses .course .describe {
+section .down-card .diagrams .diagram .describe {
   background: rgb(246, 246, 246);
   text-align: center;
   height: 40px;
