@@ -1,8 +1,8 @@
 <template>
   <div class="bg">
     <header>
-      <span style="font-size: 22px;display: flex;justify-content: space-between;align-items: center;">图拓
-        <img src="../../assets/logan.png" alt="智拓" style="width: 22px; height:22px; margin-left: 4px">
+      <span style="font-size: 30px;display: flex;justify-content: space-between;align-items: center;">图拓
+        <img src="../../assets/logan.png" alt="智拓" style="width: 30px; height:30px; margin-left: 4px">
       </span>
       <!-- <div class="avatar-wrapper" @click="logout">
         <svg-icon icon-class="set" class="svg" />
@@ -13,7 +13,9 @@
       <div class="search"></div>
     </div> -->
     <section>
-      <div class="up-card"></div>
+      <div class="up-card">
+        
+      </div>
       <div class="down-card">
         <!-- <div class="Tools">
           <el-select v-model="year" placeholder="请选择学期">
@@ -49,6 +51,10 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <span>关于我们</span> | <span>隐私声明和Cookie</span> | <span>法律声明</span> | <span>广告</span> | <span>帮助反馈</span>
+    </footer>
   </div>
 </template>
 
@@ -173,6 +179,66 @@ export default {
           time: '2022-3-3 ~ 2022-8-27',
           img: require('../../assets/img18.png'),
         },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
       ],
       courses: [],
       year: '2022-2023-1学期',
@@ -226,7 +292,6 @@ export default {
 }
 .bg {
   width: 100%;
-  height: 100%;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -284,9 +349,8 @@ section .up-card {
 }
 section .down-card {
   width: 100%;
-  height: 100%;
   display: flex;
-  margin-top: 20px;
+  margin: 20px 0px;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
@@ -294,19 +358,18 @@ section .down-card {
   border-radius: 10px;
 
 }
-section .down-card .Tools {
-  width: 100%;
-  height: 8vh;
-  line-height: 8vh;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+// section .down-card .Tools {
+//   width: 100%;
+//   height: 8vh;
+//   line-height: 8vh;
+//   padding: 0px 20px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
 section .down-card .courses {
   padding: 20px 20px 20px;
   width: 100%;
-  height: 82vh;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
@@ -314,7 +377,7 @@ section .down-card .courses {
   // overflow-y: scroll;
 }
 section .down-card .courses .course {
-  width: 30%;
+  width: 19%;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
@@ -383,5 +446,16 @@ section .down-card .courses .course .describe {
 .search-txt:focus {
     width: 200px;
     padding: 0 12px;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  color: #888888;
+}
+footer span:hover {
+  cursor: pointer;
+  color: #409EFF;
 }
 </style>
