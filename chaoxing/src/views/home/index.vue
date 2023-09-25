@@ -312,7 +312,7 @@ export default {
   },
   methods: {
     enter() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/diagram" });
     },
     // async logout() {
     //   await this.$store.dispatch('user/logout')
