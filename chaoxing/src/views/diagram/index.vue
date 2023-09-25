@@ -8,8 +8,8 @@
         <svg-icon icon-class="set" class="svg" />
       </div> -->
     </header>
-    <chart1 v-if="index"></chart1>
-    <chart2 v-if="index"></chart2>
+    <chart1 v-if="this.$route.query.index == 0"></chart1>
+    <chart2 v-if="this.$route.query.index == 1"></chart2>
     <footer>
       <span>关于我们</span> | <span>隐私声明和Cookie</span> | <span>法律声明</span> | <span>广告</span> | <span>帮助反馈</span>
     </footer>
@@ -20,11 +20,12 @@
 
 import chart1 from './atlas/Maps/sankeyDiagram.vue'
 import chart2 from './atlas/Maps/chordDiagram.vue'
+import { log } from 'console'
 export default {
   name: 'Dashboard',
   data() {
     return {
-
+      index: ''
     }
   },
   methods: {
@@ -69,6 +70,7 @@ footer {
   color: #888888;
   border-top: 2px solid #f3f3f3;
 }
+
 footer span:hover {
   cursor: pointer;
   color: #409EFF;
