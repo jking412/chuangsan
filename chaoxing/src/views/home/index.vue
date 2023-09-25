@@ -13,24 +13,9 @@
       <div class="search"></div>
     </div> -->
     <section>
-      <div class="left-card">
-        <div class="people">
-          <div :class="role === '学生' ? 'imgS': 'imgT'"></div>
-          <div style="font-size: 18px; margin-top:4px">{{person.name}}</div>
-          <div style="font-size: 14px;color: #a8a8b3;">{{role}}</div>
-        </div>
-        <div class="select">
-          <div class="clazz">
-            <svg-icon icon-class="course" style="width: 24px;height: 24px;margin-right: 20px"/>课程
-          </div>
-        </div>
-        <div class="logout" @click="logout">
-          <svg-icon icon-class="logout" style="width: 24px;height: 24px;margin-right: 20px" />
-          退出
-        </div>
-      </div>
-      <div class="right-card">
-        <div class="Tools">
+      <div class="up-card"></div>
+      <div class="down-card">
+        <!-- <div class="Tools">
           <el-select v-model="year" placeholder="请选择学期">
             <el-option
               v-for="(item, index) in years"
@@ -48,7 +33,7 @@
               <input type="text" class="search-txt" placeholder="搜索" @keyup.enter="search()" />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="courses">
           <div class="course" v-for="item in courses" :key="item.index" @click="enter">
             <div class="course-img">
@@ -215,10 +200,10 @@ export default {
     enter() {
       this.$router.push({ path: "/" });
     },
-    async logout() {
-      await this.$store.dispatch('user/logout')
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`)
-    },
+    // async logout() {
+    //   await this.$store.dispatch('user/logout')
+    //   this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+    // },
   },
   mounted() {
     this.role === '学生' ? this.person.name = '王倩' : this.person.name = '王涛';
@@ -288,79 +273,20 @@ header {
 section {
   margin-top: 40px;
   transform: translateX();
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
-section .left-card {
-  position: relative;
-  width: 20%;
-  height: 100%;
-  border-radius: 20px;
-  // overflow: hidden;
-  background-color: #fff;
+  width: 80%;
 }
 
-section .left-card .people {
+section .up-card {
   width: 100%;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #f5f5f5;
-}
-section .left-card .people .imgS {
-  width: 110px;
-  height: 110px;
-  background: url(../../assets/default-user.jpg) no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-}
-section .left-card .people .imgT {
-  width: 110px;
-  height: 110px;
-  background: url(../../assets/teacher.png) no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-}
-section .left-card .select {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section .left-card .select .clazz {
-  width: 100%;
-  height: 34px;
-  line-height: 34px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
   background-color: #fff;
-  color: #409EFF;
-  font-size: 18px;
+  border-radius: 10px;
 }
-section .left-card .select .clazz:hover {
-  background-color: #ebebeb;
-}
-section .left-card .logout {
-  position: absolute;
-  bottom: 6vh;
+section .down-card {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-}
-section .left-card .logout:hover {
-  color: #409EFF;
-  cursor: pointer;
-}
-section .right-card {
-  width: 79%;
   height: 100%;
   display: flex;
+  margin-top: 20px;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
@@ -368,7 +294,7 @@ section .right-card {
   border-radius: 10px;
 
 }
-section .right-card .Tools {
+section .down-card .Tools {
   width: 100%;
   height: 8vh;
   line-height: 8vh;
@@ -377,39 +303,39 @@ section .right-card .Tools {
   justify-content: space-between;
   align-items: center;
 }
-section .right-card .courses {
-  padding: 0px 20px 20px;
+section .down-card .courses {
+  padding: 20px 20px 20px;
   width: 100%;
   height: 82vh;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
-section .right-card .courses .course {
+section .down-card .courses .course {
   width: 30%;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
 }
-section .right-card .courses .course:hover .course-img img{
+section .down-card .courses .course:hover .course-img img{
   scale: 1.2;
 }
-section .right-card .courses .course:hover h4 {
+section .down-card .courses .course:hover h4 {
   color: #409EFF;
 }
-section .right-card .courses .course .course-img {
+section .down-card .courses .course .course-img {
   width: 100%;
   height: 200px;
   border-radius: 8px;
   overflow: hidden;
 }
-section .right-card .courses .course .course-img img {
+section .down-card .courses .course .course-img img {
   width: 100%;
   height: 100%;
 }
-section .right-card .courses .course .describe {
+section .down-card .courses .course .describe {
   font-size: 12px;
   color: #a8a8b3;
 }
