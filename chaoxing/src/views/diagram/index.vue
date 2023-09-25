@@ -64,10 +64,11 @@ footer {
   width: 100%;
   height: 60px;
   font-size: 14px;
+  line-height: 60px;
   text-align: center;
   color: #888888;
+  border-top: 2px solid #f3f3f3;
 }
-
 footer span:hover {
   cursor: pointer;
   color: #409EFF;

@@ -109,7 +109,7 @@
 
       <div class="down-card">
         <div class="diagrams">
-          <div class="diagram" v-for="item in diagrams" :key="item.index" @click="enter">
+          <div class="diagram" v-for="item in diagrams" :key="item.index" @click="enter(item.index)">
             <div class="diagram-img">
               <img :src="item.img" alt="">
             </div>
@@ -191,8 +191,8 @@ export default {
       }
     },
   methods: {
-    enter() {
-      this.$router.push({ path: "/diagram" });
+    enter(index) {
+      this.$router.push({ path: "/diagram", query: { index: index } });
     },
     TabClick(index, item) {
       item.isSelected = !item.isSelected;
