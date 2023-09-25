@@ -11,7 +11,7 @@ export const constantRoutes = [
     hidden: true,
   },
   {
-    path: '/transmit',
+    path: '/diagram',
     component: () => import('@/views/diagram/index'),
     hidden: true,
   },

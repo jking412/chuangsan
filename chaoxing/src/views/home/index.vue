@@ -1,8 +1,8 @@
 <template>
   <div class="bg">
     <header>
-      <span style="font-size: 22px;display: flex;justify-content: space-between;align-items: center;">图拓
-        <img src="../../assets/logan.png" alt="智拓" style="width: 22px; height:22px; margin-left: 4px">
+      <span style="font-size: 30px;display: flex;justify-content: space-between;align-items: center; margin-left: 10px">图拓
+        <img src="../../assets/logan.png" alt="智拓" style="width: 30px; height:30px; margin-left: 4px">
       </span>
       <!-- <div class="avatar-wrapper" @click="logout">
         <svg-icon icon-class="set" class="svg" />
@@ -13,24 +13,62 @@
       <div class="search"></div>
     </div> -->
     <section>
-      <div class="left-card">
-        <div class="people">
-          <div :class="role === '学生' ? 'imgS': 'imgT'"></div>
-          <div style="font-size: 18px; margin-top:4px">{{person.name}}</div>
-          <div style="font-size: 14px;color: #a8a8b3;">{{role}}</div>
-        </div>
-        <div class="select">
-          <div class="clazz">
-            <svg-icon icon-class="course" style="width: 24px;height: 24px;margin-right: 20px"/>课程
+      <div class="up-card">
+        <div class="jss2654">
+          <div class="sc-1gqb1pg-0 bScDLr">
+            <div class="line-name">常用</div>
+            <div class="line-content">
+              <div class="buttons">
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_line "></span>折线图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_bar "></span>柱状图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_pie "></span>饼图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_dot "></span>散点图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_relation1 "></span>关系图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_tree "></span>树图类</span><span class="jss2716"></span>
+                </button>
+                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                  <span class="icon font_family icon-icon_other "></span>其他</span><span class="jss2716"></span>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="logout" @click="logout">
-          <svg-icon icon-class="logout" style="width: 24px;height: 24px;margin-right: 20px" />
-          退出
-        </div>
+
+          <div class="sc-1gqb1pg-0 bScDLr">
+            <div class="line-name">形状</div>
+            <div class="line-content">
+              <div class="buttons">
+                <span class="icon pure-icon font_family icon-icon_circle "></span>
+                <span class="icon pure-icon font_family icon-icon_strip "></span>
+                <span class="icon pure-icon font_family icon-icon_scatter "></span>
+                <span class="icon pure-icon font_family icon-icon_special "></span>
+                <span class="icon pure-icon font_family icon-rectangle-copy "></span>
+                <span class="icon pure-icon font_family icon-triangle "></span>
+                <span class="icon pure-icon font_family icon-icon_other "></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sc-1gqb1pg-0 bScDLr">
+            <div class="line-name">图类</div>
+            <div class="line-content"><div class="buttons">
+              <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
+                <span class="icon font_family icon-icon_chart "></span>统计图表</span><span class="jss2716"></span>
+              </button>
+              <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_diagram "></span>示意图</span><span class="jss2716"></span></button></div></div></div><div class="sc-1gqb1pg-0 bScDLr"><div class="line-name">功能</div><div class="line-content"><div class="buttons"><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_vs "></span>比较</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_form "></span>组成</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_dis "></span>分布</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_relation "></span>关系</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_trend "></span>趋势</span><span class="jss2716"></span></button></div></div></div><div class="search-filters"><div class="items" style="height: 0px;">筛选内容:<div class="clear">清除</div></div></div></div>
       </div>
-      <div class="right-card">
-        <div class="Tools">
+      <div class="down-card">
+        <!-- <div class="Tools">
           <el-select v-model="year" placeholder="请选择学期">
             <el-option
               v-for="(item, index) in years"
@@ -48,22 +86,23 @@
               <input type="text" class="search-txt" placeholder="搜索" @keyup.enter="search()" />
             </div>
           </div>
-        </div>
+        </div> -->
         <div class="courses">
           <div class="course" v-for="item in courses" :key="item.index" @click="enter">
             <div class="course-img">
               <img :src="item.img" alt="">
             </div>
-            <h4>{{item.name}}</h4>
             <div class="describe">
               <p>中国地质大学</p>
-              <p>授课时间: {{item.time}}</p>
-              <p>班级: 51498365</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <footer>
+      <span>关于我们</span> | <span>隐私声明和Cookie</span> | <span>法律声明</span> | <span>广告</span> | <span>帮助反馈</span>
+    </footer>
   </div>
 </template>
 
@@ -188,6 +227,66 @@ export default {
           time: '2022-3-3 ~ 2022-8-27',
           img: require('../../assets/img18.png'),
         },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+                {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
+        {
+          index: 5,
+          name: '水利工程与水利规划',
+          time: '2022-3-3 ~ 2022-8-27',
+          img: require('../../assets/img18.png'),
+        },
       ],
       courses: [],
       year: '2022-2023-1学期',
@@ -213,12 +312,12 @@ export default {
   },
   methods: {
     enter() {
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/diagram" });
     },
-    async logout() {
-      await this.$store.dispatch('user/logout')
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`)
-    },
+    // async logout() {
+    //   await this.$store.dispatch('user/logout')
+    //   this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+    // },
   },
   mounted() {
     this.role === '学生' ? this.person.name = '王倩' : this.person.name = '王涛';
@@ -241,7 +340,6 @@ export default {
 }
 .bg {
   width: 100%;
-  height: 100%;
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
@@ -271,6 +369,7 @@ header {
     }
   }
 }
+
 .title {
   margin-top: 40px;
   width: 1200px;
@@ -288,79 +387,19 @@ header {
 section {
   margin-top: 40px;
   transform: translateX();
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
-section .left-card {
-  position: relative;
-  width: 20%;
-  height: 100%;
-  border-radius: 20px;
-  // overflow: hidden;
-  background-color: #fff;
+  width: 80%;
 }
 
-section .left-card .people {
+section .up-card {
   width: 100%;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid #f5f5f5;
-}
-section .left-card .people .imgS {
-  width: 110px;
-  height: 110px;
-  background: url(../../assets/default-user.jpg) no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-}
-section .left-card .people .imgT {
-  width: 110px;
-  height: 110px;
-  background: url(../../assets/teacher.png) no-repeat;
-  background-size: contain;
-  border-radius: 50%;
-}
-section .left-card .select {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-section .left-card .select .clazz {
-  width: 100%;
-  height: 34px;
-  line-height: 34px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 200px;
   background-color: #fff;
-  color: #409EFF;
-  font-size: 18px;
+  border-radius: 10px;
 }
-section .left-card .select .clazz:hover {
-  background-color: #ebebeb;
-}
-section .left-card .logout {
-  position: absolute;
-  bottom: 6vh;
+section .down-card {
   width: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-}
-section .left-card .logout:hover {
-  color: #409EFF;
-  cursor: pointer;
-}
-section .right-card {
-  width: 79%;
-  height: 100%;
-  display: flex;
+  margin: 20px 0px;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
@@ -368,50 +407,50 @@ section .right-card {
   border-radius: 10px;
 
 }
-section .right-card .Tools {
+// section .down-card .Tools {
+//   width: 100%;
+//   height: 8vh;
+//   line-height: 8vh;
+//   padding: 0px 20px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+section .down-card .courses {
+  padding: 20px 20px 20px;
   width: 100%;
-  height: 8vh;
-  line-height: 8vh;
-  padding: 0px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section .right-card .courses {
-  padding: 0px 20px 20px;
-  width: 100%;
-  height: 82vh;
   display: flex;
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 }
-section .right-card .courses .course {
-  width: 30%;
+section .down-card .courses .course {
+  width: 19%;
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
 }
-section .right-card .courses .course:hover .course-img img{
+section .down-card .courses .course:hover .course-img img{
   scale: 1.2;
 }
-section .right-card .courses .course:hover h4 {
+section .down-card .courses .course:hover .describe {
   color: #409EFF;
 }
-section .right-card .courses .course .course-img {
+section .down-card .courses .course .course-img {
   width: 100%;
   height: 200px;
   border-radius: 8px;
   overflow: hidden;
 }
-section .right-card .courses .course .course-img img {
+section .down-card .courses .course .course-img img {
   width: 100%;
   height: 100%;
 }
-section .right-card .courses .course .describe {
-  font-size: 12px;
-  color: #a8a8b3;
+section .down-card .courses .course .describe {
+  font-size: 16px;
+  text-align: center;
+  color: rgb(74, 74, 74);
 }
 
 .search-box {
@@ -457,5 +496,16 @@ section .right-card .courses .course .describe {
 .search-txt:focus {
     width: 200px;
     padding: 0 12px;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  font-size: 14px;
+  text-align: center;
+  color: #888888;
+}
+footer span:hover {
+  cursor: pointer;
+  color: #409EFF;
 }
 </style>
