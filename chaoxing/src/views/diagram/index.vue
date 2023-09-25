@@ -8,7 +8,8 @@
         <svg-icon icon-class="set" class="svg" />
       </div> -->
     </header>
-    <chart2></chart2>
+    <chart1 v-if="index"></chart1>
+    <chart2 v-if="index"></chart2>
     <footer>
       <span>关于我们</span> | <span>隐私声明和Cookie</span> | <span>法律声明</span> | <span>广告</span> | <span>帮助反馈</span>
     </footer>
