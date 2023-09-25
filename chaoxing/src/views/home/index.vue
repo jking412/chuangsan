@@ -14,58 +14,7 @@
     </div> -->
     <section>
       <div class="up-card">
-        <div class="jss2654">
-          <div class="sc-1gqb1pg-0 bScDLr">
-            <div class="line-name">常用</div>
-            <div class="line-content">
-              <div class="buttons">
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_line "></span>折线图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_bar "></span>柱状图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_pie "></span>饼图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_dot "></span>散点图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_relation1 "></span>关系图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_tree "></span>树图类</span><span class="jss2716"></span>
-                </button>
-                <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                  <span class="icon font_family icon-icon_other "></span>其他</span><span class="jss2716"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div class="sc-1gqb1pg-0 bScDLr">
-            <div class="line-name">形状</div>
-            <div class="line-content">
-              <div class="buttons">
-                <span class="icon pure-icon font_family icon-icon_circle "></span>
-                <span class="icon pure-icon font_family icon-icon_strip "></span>
-                <span class="icon pure-icon font_family icon-icon_scatter "></span>
-                <span class="icon pure-icon font_family icon-icon_special "></span>
-                <span class="icon pure-icon font_family icon-rectangle-copy "></span>
-                <span class="icon pure-icon font_family icon-triangle "></span>
-                <span class="icon pure-icon font_family icon-icon_other "></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="sc-1gqb1pg-0 bScDLr">
-            <div class="line-name">图类</div>
-            <div class="line-content"><div class="buttons">
-              <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656">
-                <span class="icon font_family icon-icon_chart "></span>统计图表</span><span class="jss2716"></span>
-              </button>
-              <button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_diagram "></span>示意图</span><span class="jss2716"></span></button></div></div></div><div class="sc-1gqb1pg-0 bScDLr"><div class="line-name">功能</div><div class="line-content"><div class="buttons"><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_vs "></span>比较</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_form "></span>组成</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_dis "></span>分布</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_relation "></span>关系</span><span class="jss2716"></span></button><button class="jss2681 jss2655 jss2663" tabindex="0" type="button"><span class="jss2656"><span class="icon font_family icon-icon_trend "></span>趋势</span><span class="jss2716"></span></button></div></div></div><div class="search-filters"><div class="items" style="height: 0px;">筛选内容:<div class="clear">清除</div></div></div></div>
+        
       </div>
       <div class="down-card">
         <!-- <div class="Tools">
