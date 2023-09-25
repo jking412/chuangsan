@@ -1,0 +1,23 @@
+@font-face {
+
+  font-family: 'PR';
+
+  src: url('./TsangerYuYangT_W03_W03.ttf');
+
+  font-weight: normal;
+
+  font-style: normal;
+
+}
+
+body {
+  font-family: "PR";
+  /* 更改字体 */
+
+}
+
+.el-component {
+  font-family: "PR";
+  /* 继承全局字体样式 */
+
+}
